@@ -1,13 +1,12 @@
 package com.victorponz.calculator;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+public class CalculatorApplicationTests {
+     private Calculator calculator = new Calculator();
 
-@SpringBootTest
-class CalculatorApplicationTests {
-
-	@Test
-	void contextLoads() {
-	}
-
+     @Test
+     public void testSum() {
+          assertEquals(5, calculator.sum(2, 3));
+     }
 }
